@@ -1,0 +1,24 @@
+    <!-- <h3>{{todayDate | pipe1}}</h3> -->
+<!-- <div>
+    <input type="text" >
+</div> -->
+<div class="container w-50 shadow mt-5 ">
+<table class=" table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Salary</th>
+        <th scope="col">Gender</th>
+
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of EmployeeList">
+            <td >{{item.Name | searchOptimization:item.Gender}}</td>
+            <td>{{item.Salary}}</td>
+            <td>{{item.Gender}}</td>
+        </tr>
+        
+    </tbody>
+  </table>
+</div>
